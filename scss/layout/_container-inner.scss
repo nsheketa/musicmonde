@@ -1,0 +1,35 @@
+.container-inner{
+  padding: 0 8.33%;
+
+  @include respond-max(1200){
+    padding: 0 70px;
+  }
+
+  @include respond-max(1024){
+    padding: 0 15px;
+  }
+}
+
+.container-inner--left{
+  padding: 0 2rem 0 8.33%;
+
+  @include respond-max(1200){
+    padding: 0 2rem 0 70px;
+  }
+
+  @include respond-max(1024){
+    padding: 0 15px;
+  }
+}
+
+.container-inner--right{
+  padding: 0 8.33% 0 2rem;
+
+  @include respond-max(1200){
+    padding: 0 70px 0 2rem;
+  }
+
+  @include respond-max(1024){
+    padding: 0 15px;
+  }
+}

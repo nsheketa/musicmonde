@@ -1,0 +1,18 @@
+.director__about{
+  min-height: 100vh;
+  background-color: #000;
+
+  .card__title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.4;
+  }
+  .content-card {
+    p {
+      max-width: none;
+      &:first-of-type {
+        max-width: none;
+      }
+    }
+  }
+}

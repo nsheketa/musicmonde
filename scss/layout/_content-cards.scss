@@ -1,0 +1,127 @@
+.content-card__outer-wrap{
+  @include display-flex();
+  width: 100%;
+  height: 100%;
+
+  @include respond-max(768) {
+    @include flex-wrap();
+  }
+}
+
+.content-card{
+  position: relative;
+  width: 50%;
+  max-width: 50%;
+  @include respond-max(768){
+    width: 100%;
+    max-width: 100%;
+    @include flex-order(2);
+  }
+}
+
+.content-card__inner{
+
+}
+
+.content-card__inner--left{
+  position: relative;
+  padding: 80px 2rem 60px 16.33%;
+
+  @include respond-max(1200){
+    padding: 80px 2rem 60px 70px;
+  }
+  @include respond-max(1025){
+    padding: 80px 15px 60px;
+  }
+  @include respond-max(768){
+    padding: 40px 15px;
+  }
+}
+.content-card__inner--right{
+  position: relative;
+  padding: 80px 16.33% 60px 70px;
+
+  @include respond-max(1200){
+    padding: 80px 2rem 60px 70px;
+  }
+  @include respond-max(1025){
+    padding: 80px 15px 60px;
+  }
+  @include respond-max(768){
+    padding: 40px 15px;
+  }
+}
+
+.card__title{
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  letter-spacing: 4px;
+  @include respond-max(992){
+    letter-spacing: 3px;
+  }
+  @include respond-max(768){
+    margin-bottom: 35px;
+    letter-spacing: 4px;
+  }
+}
+
+.card-btn__wrap{
+  position: absolute;
+  left: 16.33%;
+  bottom: 80px;
+
+  @include respond-max(1200) {
+    left: 70px;
+  }
+  @include respond-max(1025) {
+    left: auto;
+    right: 40px;
+    bottom: auto;
+    top: 78px;
+  }
+  @include respond-max(768) {
+    top: 39px;
+    right: 20px;
+  }
+  @include respond-max(576) {
+    top: 36px;
+  }
+}
+
+.content-card__inner--right{
+  .card-btn__wrap{
+    left: 70px;
+  }
+  @include respond-max(1025) {
+    .card-btn__wrap{
+      left: auto;
+      right: 40px;
+      bottom: auto;
+      top: 78px;
+    }
+  }
+  @include respond-max(768) {
+    .card-btn__wrap{
+      top: 35px;
+      right: 20px;
+    }
+  }
+}
+
+/*IMAGES*/
+
+.content-card__img{
+  width: 50%;
+  max-width: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include respond-max(768){
+    width: 100%;
+    max-width: 100%;
+    @include flex-order(1);
+  }
+
+}

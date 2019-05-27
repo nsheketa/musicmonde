@@ -1,0 +1,72 @@
+.education-mixed__card{
+  @include respond-max(1024){
+    @include flex-order(1);
+  }
+}
+
+.education-mixed__card-inner{
+  @include display-flex();
+  @include flex-wrap();
+}
+
+.education-mixed__card-item {
+  width: 50%;
+  max-width: 50%;
+  padding: 50px 20px 30px 30px;
+  color: $textDarkColor;
+  @include display-flex();
+  @include flex-wrap();
+
+  .card__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    line-height: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+  .card__title{
+    text-transform: capitalize;
+    line-height: 1.1;
+    letter-spacing: 0;
+    max-width: 280px;
+  }
+
+  .card__date{
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .card__quantity{
+    margin-bottom: 0;
+  }
+
+  @include respond-max(1350){
+    .card__title{
+      max-width: 190px;
+    }
+  }
+  @include respond-max(1025) {
+    padding: 30px 15px;
+  }
+}
+
+.education-mixed__card-item{
+
+  &.white{
+    background-color: #fff;
+  }
+  &.grey{
+    background-color: $greyColor;
+  }
+  &.dark-grey{
+    background-color: $darkGreyColor;
+  }
+  &.gold{
+    background-color: $goldColor;
+  }
+}
+
+.education-mixed__card-bottom{
+  align-self: flex-end;
+  width: 100%;
+  max-width: 100%;
+}

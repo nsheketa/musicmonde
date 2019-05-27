@@ -1,0 +1,148 @@
+.footer {
+
+}
+
+.footer__content-card {
+
+  &:last-of-type {
+    background-color: $goldColor;
+    h3{
+      margin-top: 50px;
+    }
+  }
+  @include respond-max(768){
+    &:last-of-type {
+      h3{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.footer-card__inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+
+  @include respond-max(1025) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  @include respond-max(768) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.footer-signup__form {
+  font-family: $Avenir;
+  @include font-size(28); //24px
+  .form-input__wrap {
+    display: inline-block;
+    width: 68%;
+  }
+  .form__input {
+    padding: 13px 20px;
+    color: #fff;
+    font-weight: 300;
+    @include input-placeholder{
+      color: inherit;
+      font-weight: 300;
+    }
+  }
+
+  @include respond-max(1350) {
+    @include font-size(22);
+  }
+
+  @include respond-max(1024) {
+    @include font-size(20);
+  }
+  @include respond-max(768){
+    .form-input__wrap{
+      width: 100%;
+    }
+  }
+}
+
+.footer-form__submit-wrap{
+  display: inline-block;
+  @include respond-max(768){
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.footer-form__submit {
+  display: inline-block;
+  vertical-align: middle;
+  border: none !important;
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: inherit;
+  color: #fff;
+  font-family: $Avenir;
+  font-weight: 300;
+
+  @include respond-max(768){
+    padding-right: 0;
+  }
+}
+
+.footer__logo {
+  display: block;
+  max-width: 100px;
+  position: absolute;
+  left: 16.33%;
+  bottom: -15px;
+  img{
+    width: 100%;
+  }
+  @include respond-max(1200){
+    left: 70px;
+  }
+  @include respond-max(1025){
+    left: 15px;
+  }
+  @include respond-max(768) {
+    display: none;
+  }
+}
+
+.footer-contact__wrap {
+  a{
+    display: block;
+    color: #fff;
+  }
+}
+
+.footer__socials{
+  position: absolute;
+  left: 16.33%;
+  bottom: 80px;
+
+  @include respond-max(1200){
+    left: 70px;
+  }
+  @include respond-max(1025){
+    left: 15px;
+  }
+  @include respond-max(768){
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 32px;
+  }
+}
+
+.footer__socials-icon{
+  display: inline-block;
+  margin-right: 10px;
+  svg{
+    display: inline-block;
+    @include square(30px);
+    fill: #fff;
+    @include transition-03();
+  }
+}

@@ -1,0 +1,14 @@
+.masterclasses__content-card {
+  background-color: $goldColor;
+}
+
+.masterclasses-card__inner {
+  padding-bottom: 200px;
+
+  .card__title{
+    @include respond-max(992) {
+      letter-spacing: 1px;
+    }
+  }
+}
+

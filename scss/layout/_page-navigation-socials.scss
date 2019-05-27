@@ -1,0 +1,40 @@
+.page-nav__socials{
+  margin: 9.5vh auto 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  @include respond-max(360){
+    margin: 10% auto 0;
+  }
+}
+
+.page-nav__socials-item{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.page-nav__socials-link{
+  display: block;
+  svg{
+    display: block;
+    @include square(30px);
+    fill: #fff;
+    @include transition-03();
+  }
+
+  &:hover, &:focus, &:active{
+    svg{
+      fill: $goldColor;
+    }
+  }
+}
+
+@media screen and (max-height: 500px) and (max-width: 812px){
+  .page-nav__socials{
+    margin: 5vh auto 0;
+    position: relative;
+  }
+}

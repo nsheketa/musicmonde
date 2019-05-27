@@ -1,0 +1,173 @@
+.application {
+  background-color: $goldColor;
+  padding: 150px 0;
+}
+
+.application__info {
+  margin-bottom: 50px;
+}
+
+.application-form__warning {
+  @include font-size(18);
+  text-transform: uppercase;
+  text-align: right;
+  font-family: $baseFontFamily;
+  letter-spacing: 2px;
+
+  @include respond-max(1024) {
+    @include font-size(15);
+    margin-bottom: 25px !important;
+  }
+  @include respond-max(576){
+    text-align: left;
+  }
+}
+
+h5.application-form__label {
+  margin-bottom: 35px;
+}
+
+.application-form__label {
+  display: block;
+  letter-spacing: 2px;
+  @include font-size(21); //20px
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+
+  @include respond-max(1350) {
+    @include font-size(20);
+  }
+  @include respond-max(1024) {
+    @include font-size(16);
+  }
+}
+
+.application-form__block {
+  margin-bottom: 30px;
+}
+
+.application-form__row {
+  @include display-flex();
+  @include flex-wrap();
+
+}
+
+.application-form__col {
+  margin-right: 3rem;
+  margin-bottom: 25px;
+  &.xs {
+    min-width: 176px;
+  }
+  &.sm {
+    min-width: 300px;
+    max-width: 100%;
+  }
+  &.md {
+    min-width: 337px;
+    max-width: 100%;
+  }
+  &.lg {
+    min-width: 420px;
+    max-width: 100%;
+  }
+  &.xl {
+    min-width: 630px;
+    max-width: 100%;
+  }
+  .form__input {
+    max-width: 630px;
+  }
+
+  @include respond-max(768) {
+    &.xs {
+      width: 176px;
+      min-width: 100px;
+      max-width: 100%;
+    }
+    &.sm {
+      min-width: 100px;
+      max-width: 100%;
+    }
+    &.md {
+      width: 337px;
+      min-width: 100px;
+      max-width: 100%;
+    }
+    &.lg {
+      width: 420px;
+      min-width: 100px;
+      max-width: 100%;
+    }
+    &.xl {
+      width: 630px;
+      min-width: 100px;
+      max-width: 100%;
+    }
+  }
+
+  @include respond-max(576) {
+    margin-right: 0;
+  }
+}
+
+.application-form__absolute-wrap {
+  position: relative;
+
+  input {
+    padding-left: 113px;
+  }
+  &.form__select-wrap {
+    .form__select-placeholder {
+      padding-left: 93px;
+    }
+  }
+}
+
+.application-form__absolute-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.application-form__add {
+  display: block;
+  color: #fff;
+}
+
+.application-form__issue-row, .application-form__study-row {
+
+  .application-form__col {
+    margin-right: 20px;
+    @include respond-max(576){
+      margin-right: 10px;
+    }
+  }
+}
+
+.application-form__study-row {
+  @include respond-max(576) {
+    .application-form__col {
+      margin-right: 60px;
+    }
+    .placeholder-label {
+      display: none;
+    }
+  }
+}
+
+.application-form__upload-row {
+  p {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.application-form__submit{
+  //margin-top: 40px;
+}

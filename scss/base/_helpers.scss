@@ -1,0 +1,20 @@
+.show-in-mob{
+  display: none !important;
+  @include respond-max(1025){
+    display: block !important;
+  }
+}
+
+.hide-in-mob{
+  display: block !important;
+  @include respond-max(1025){
+    display: none !important;
+  }
+}
+
+.pb-200{
+  padding-bottom: 200px !important;
+  @include respond-max(1025){
+    padding-bottom: 60px !important;
+  }
+}
